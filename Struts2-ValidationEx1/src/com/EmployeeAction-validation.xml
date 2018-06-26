@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+    "-//Apache Struts//XWork Validator 1.0.3//EN"
+      "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+  <field name="id">
+    <field-validator type="requiredstring">
+      <message>Employee Id can not be blank</message>
+    </field-validator>
+    <field-validator type="regex">
+      <param name="expression">
+      <![CDATA[([A-Z][A-Z][0][0][0-9][0-9][0-9])]]>
+      </param>
+      <message>Valid Employee ID required e.g. SS00123</message>
+    </field-validator>
+  </field>
+
+  <field name="name">
+    <field-validator type="requiredstring">
+    <message>Employee Name can not be blank</message>
+    </field-validator>
+  </field>
+
+  <field name="password1">
+    <field-validator type="requiredstring">
+    <message>Password can not be blank</message>
+    </field-validator>
+    <field-validator type="stringlength">
+    <param name="maxLength">10</param>
+    <param name="minLength">5</param>
+    <param name="trim">true</param>
+    <message>Enter password 5-10 characters long.</message>
+    </field-validator>
+  </field>
+
+  <field name="password2">
+    <field-validator type="fieldexpression">
+    <param name="expression">(password1 == password2)</param>
+    <message>Both Password must be same.</message>
+    </field-validator>
+  </field>
+
+  <field name="dob">
+    <field-validator type="date">
+    <param name="min">01/01/2001</param>
+    <param name="max">01/01/2013</param>
+    <message>Enter date between ${min}and ${max}</message>
+    </field-validator>
+  </field>
+
+  <field name="salary">
+    <field-validator type="int">
+    <param name="min">1</param>
+    <param name="max">50000</param>
+    <message>Enter salary between ${min}and ${max}</message>
+    </field-validator>
+  </field>
+
+<field name="city">
+    <field-validator type="requiredstring">
+    <message>City can not be blank.</message>
+    </field-validator>
+  </field>
+
+  <field name="email">
+    <field-validator type="requiredstring">
+    <message>Blank email is not allowed</message>
+    </field-validator>
+    <field-validator type="email">
+    <message>Enter a valid eMail Id.</message>
+    </field-validator>
+  </field>
+</validators>

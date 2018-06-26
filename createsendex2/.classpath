@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="D:/Jar Files/loginTask/com.sun.jersey.jersey-core-1.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/Jar Files/loginTask/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="D:/Jar Files/loginTask/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="D:/Jar Files/loginTask/createsend-java-3.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Jar Files/loginTask/createsend-java-3.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Jar Files/loginTask/createsend-java-5.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Jar Files/loginTask/jackson-all-1.9.0.jar"/>
+	<classpathentry kind="lib" path="D:/Jar Files/loginTask/jackson-core-asl-1.9.1.jar"/>
+	<classpathentry kind="lib" path="D:/Jar Files/loginTask/jackson-core-lgpl-1.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/Jar Files/loginTask/jackson-jaxrs-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Jar Files/loginTask/javax.ws.rs-api-2.0.jar"/>
+	<classpathentry kind="lib" path="D:/Jar Files/loginTask/javax.ws.rs-api-2.0-m02.jar"/>
+	<classpathentry kind="lib" path="D:/Jar Files/loginTask/jersey-client.jar"/>
+	<classpathentry kind="lib" path="D:/Jar Files/loginTask/jersey-client-1.19.jar"/>
+	<classpathentry kind="lib" path="D:/Jar Files/loginTask/jersey-client-2.26-b02.jar"/>
+	<classpathentry kind="lib" path="D:/Jar Files/loginTask/jersey-json-1.8.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

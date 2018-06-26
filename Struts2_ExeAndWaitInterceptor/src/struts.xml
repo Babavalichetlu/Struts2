@@ -1,0 +1,17 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="Login" class="com.LoginAction">
+			<interceptor-ref name="completeStack" />
+			<interceptor-ref name="execAndWait">
+				<param name="delay">2000</param>
+				<param name="delaySleepInterval">50</param>
+			</interceptor-ref>
+			<result name="wait">Wait.jsp</result>
+			<result name="success">Success.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+	</package>
+</struts>

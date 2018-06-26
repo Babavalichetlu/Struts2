@@ -1,0 +1,16 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts>
+ 
+	<package name="user" extends="struts-default">
+		<action name="test" class="com.Test">
+			
+			<interceptor-ref name = "alias"/>
+               <param name="alias">#{ 'code' : 'empCode','name' : 'empName','city' :'empCity','salary' : 'empSalary' }</param>
+			<result name="success">/welcome.jsp</result>
+		</action>
+	</package>
+ 
+</struts>

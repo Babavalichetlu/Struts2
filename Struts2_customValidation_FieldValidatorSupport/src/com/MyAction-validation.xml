@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC 
+  "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+  "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="username">
+		<field-validator type="requiredstring">
+			<param name="trim">false</param>
+			<message>Username is required.</message>
+		</field-validator>
+	</field>
+
+	<field name="email">
+		<field-validator type="email">
+			<message>Email is invalid.</message>
+		</field-validator>
+		<field-validator type="requiredstring">
+			<message>Email is required.</message>
+		</field-validator>
+		<field-validator type="myvalidator">
+			<param name="domainName">gmail.com</param>
+			<message>Email must ends with ${domainName}</message>
+		</field-validator>
+	</field>
+</validators>

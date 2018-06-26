@@ -1,0 +1,16 @@
+.DS_Store
+.classpath
+.project
+.gradle
+.settings
+.idea
+classes
+createsend-java.i*
+javadoc.xml
+workingsamples
+bin
+dist
+build
+doc
+target
+out

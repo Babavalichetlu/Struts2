@@ -1,0 +1,13 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<package name="default" namespace="/" extends="struts-default">
+<action name="EmployeeAlias" class="com.EmployeeAlias">
+ <interceptor-ref name = "alias"/>
+<param name="aliases">#{ 'code' : 'empCode','name' : 'empName','city' :
+'empCity','salary' : 'empSalary' }</param>
+<result name="success">EmployeeAlias.jsp</result>
+</action>
+</package>
+</struts>

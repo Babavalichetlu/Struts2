@@ -1,0 +1,13 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+  <package name="default" extends="struts-default">
+    <action name="EmployeePersonal" class="com.EmployeePersonal">
+      <result name="success" type="chain">EmployeeProfessional</result>
+    </action>
+    <action name="EmployeeProfessional" class="com.EmployeeProfessional">
+      <result name="success">/WEB-INF/pages/EmployeeSuucess.jsp</result>
+    </action>
+  </package>
+</struts>
